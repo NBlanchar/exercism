@@ -15,7 +15,6 @@ def count_words(sentence):
         palabra = sentence[x]
         if(palabra.count("'") > 1):
             sentence[x] = palabra.replace("'", "")
-    print(sentence)
     for palabra in sentence:
         if(palabra.count("'") > 1):
             palabra = palabra.replace("'", "")

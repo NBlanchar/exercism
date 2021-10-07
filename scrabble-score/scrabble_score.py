@@ -18,5 +18,4 @@ def score(word):
             count = count + 8
         if(x == 'q' or x == 'z'):
             count = count + 10
-    return count        
-            
+    return count

@@ -2,12 +2,12 @@ class Matrix:
     def __init__(self, matrix_string):
         self.matriz = []
         filas = matrix_string.split('\n')
-        for x in range(len(filas)):
-            stringfilas = filas[x]
+        for x in filas:
+            stringfilas = x
             datos = stringfilas.split(' ')
             fila_matriz = []
-            for y in range(len(datos)):
-                valor = int(datos[y])
+            for y in datos:
+                valor = int(y)
                 fila_matriz.append(valor)
             self.matriz.append(fila_matriz)
 

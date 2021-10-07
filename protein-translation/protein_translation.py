@@ -19,9 +19,9 @@ def proteins(strand):
         "UGA": "STOP"
     }
     resultado = []
-    num = int(len(strand)/3)
+    num = int(len(strand) / 3)
     for x in range(num):
-        condons = strand[x*3:x*3+3]
+        condons = strand[x * 3:x * 3 + 3]
         if(protein[condons] == 'STOP'):
             return resultado
         else:
