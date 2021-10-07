@@ -9,8 +9,8 @@ class Matrix:
             for y in range(len(datos)):
                 valor = int(datos[y])
                 fila_matriz.append(valor)
-            self.matriz.append(fila_matriz)        
-           
+            self.matriz.append(fila_matriz)
+
     def row(self, index):
         resultado = []
         for x in range(len(self.matriz[index-1])):
